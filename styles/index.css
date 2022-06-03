@@ -1,0 +1,112 @@
+ul {
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
+
+.section {
+    min-height: 200px;
+    padding: 1rem;
+}
+
+
+.one {
+    background-color: #eaf9fa;
+    padding: 1rem;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.list-icons {
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+
+.list-icons li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-icons li span {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.list-icons li:hover img{
+    transform: scale(1.15);
+}
+
+.list-icons li:hover span{
+    font-weight: 700;
+}
+
+.two{
+display: flex;
+justify-content: center;
+padding: 150px;
+}
+
+.two .card{
+    width: 35vw;
+    margin: 1rem;
+    background-color: blueviolet;
+    min-height: 80vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #eaf9fa;
+    border: none;
+}
+
+.card1{
+    background-image: url(../images/card1.jpg);
+    
+}
+
+.card button{
+border: none;
+width: 200px;
+height: 30px;
+border-radius: 15px;
+margin: auto;
+margin-top: 2px;
+}
+
+.data{
+    background-color: rgba(2, 2, 45, 70%);
+    padding: 50px;
+    box-shadow: 0px 7px 7px 1px rgba(2,2,45,70%);
+}
+
+.card2{
+    background-image: url(../images/card2.jpeg);
+}
+
+.three{
+    background-color: #eaf9fa;
+    margin-bottom: 100px;
+    padding: 5rem;
+}
+
+.accordion{
+    width: 700px;
+    margin: auto;
+}
+
+.three .title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(2, 2, 45, 70%);
+    padding: 50px;
+    box-shadow: 0px 7px 7px 1px rgba(2,2,45,70%)
+}

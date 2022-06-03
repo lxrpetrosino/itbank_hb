@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITBank</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(2, 2, 45) ;">
+      <div class="container-fluid">
+        <a class="navbar-brand-dark" href="#">
+          <img src="./images/itbank_logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">Homebanking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Hacete cliente</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Sucursales</a>
+              </li>
+              <li>
+                <a class="nav-link" aria-current="page" href="#accordion">Atencion al cliente</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Que estas buscando?"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- contenido principal -->
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/820/240" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block filter">
+                      <h5>Pedi tus tarjetas gratis hoy</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/820/240" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block filter">
+                      <h5>Descarga la app ITBank en tu celular y obtene grandes beneficios</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/820/240" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block filter">
+                      <h5>Participa por $1.000.000 todos los meses</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/820/240" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block filter">
+                      <h5>Te gustaria aprender sobre finanzas</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div> 
+        </section>
+
+
+        <section class="section one">
+           <ul class="list-icons">
+               <li>
+                   <img height="50" src="./images/icons/cuentas.svg" alt="">
+                   <span>Cuentas</span>
+               </li>
+               <li>
+                    <img height="50" src="./images/icons/inversiones.svg" alt="">
+                    <span>Inversiones</span>
+                </li>
+                <li>
+                    <img height="50" src="./images/icons/prestamos.svg" alt="">
+                    <span>Prestamos</span>
+                </li>
+                <li>
+                    <img height="50" src="./images/icons/promociones.svg" alt="">
+                    <span>Promociones</span>
+                </li>
+                <li>
+                    <img height="50" src="./images/icons/seguros.svg" alt="">
+                    <span>Seguros</span>
+                </li>
+                <li>
+                    <img height="50" src="./images/icons/tarjetas.svg" alt="">
+                    <span>Tarjetas</span>
+                </li>
+           </ul>
+        </section>
+       
+
+        <section class="section two">
+            <div class="card card1">
+                <div class="data">
+                    <h3>Asegurate con ITBank y evitá las estafas</h3>
+                    <p>Que tu unica preocupacion sea disfrutar, conoce todas las coberturas que tenemos para vos</p>
+                    <button>Todos los seguros</button>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="data">
+                    <h3>Aprovecha las charlas! Informate sin salir de tu casa</h3>
+                    <p>Profesionales nos hablan online sobre economía, inversiones, salud y más</p>
+                    <button>Quiero aprender</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section three">
+            <h2 class="title">Preguntas frecuentes</h2>
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Dónde consulto los movimientos de mi cuenta?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Por Homebanking y App ITBank.</strong> Desde Cuentas > Clic sobre tu cuenta > Movimientos.
+
+                      Además, vas a poder revisar tus movimientos con los filtros de ingresos de dinero, egresos de dinero y rango de fechas.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo puedo comprar o vender dólares?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Por Homebanking y App ITBank.</strong> Desde la opción "Compra/Venta de dólares". La encontrás en el menú principal de Online Banking y en el menú “Más” de la app.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cómo pido un préstamo personal y qué necesito?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Por Homebanking y App ITBank.</strong> Simulá y solicitá tu préstamo personal en la sección Préstamos > Nuevo Préstamo.
+
+                      Podés pedir el monto que tenés disponible y elegir un plan de cuotas de entre 6 y 72 meses. Además, empezás a pagarlo en hasta 45 días y podés cancelarlo parcial o totalmente.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        
+    </main>
+    <footer class="footer">
+      <div class="l-footer">
+        <h1>
+          <img
+            src="./images/itbank_logo.png"
+            alt=""
+          />
+        </h1>
+        <!--<p>
+      ITBANK Argentina S.A. es una sociedad anónima según la ley argentina. Ningún accionista mayoritario de capital extranjero responde por las operaciones del banco, en exceso de su integración accionaria (Ley 25.738) CUIT: 30-58888345-7. Domicilio de ITBANK Argentina S.A. Av. Libertador 181, Ciudad Autónoma de Buenos Aires. Agente de Liquidación y Compensación y Agente de Negociación Integral N° 72 inscripto ante la Comisión Nacional de Valores.</p>-->
+      </div>
+      <div class="col-xl-12 col-lg-6 p-2">
+      <ul class="r-footer">
+        <li>
+          <h2>Social</h2>
+          <ul class="box">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </li>
+        <li class="features">
+          <h2>Información</h2>
+          <ul class="box h-box">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Préstamos</a></li>
+            <li><a href="#">Saldos</a></li>
+            <li><a href="#">Turnos</a></li>
+            <li><a href="#">Cuentas</a></li>
+            <li><a href="#">Atención al Cliente</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Legal</h2>
+          <ul class="box">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="b-footer">
+        <p>
+          ITBANK Argentina S.A. es una sociedad anónima según la ley argentina.
+          Ningún accionista mayoritario de capital extranjero responde por las
+          operaciones del banco, en exceso de su integración accionaria (Ley
+          25.738) CUIT: 30-58888345-7. Domicilio de ITBANK Argentina S.A. Av.
+          Libertador 181, Ciudad Autónoma de Buenos Aires. Agente de Liquidación
+          y Compensación y Agente de Negociación Integral N° 72 inscripto ante
+          la Comisión Nacional de Valores.
+          <br /><br />Todos los derechos reservados ©ITBANK 2022
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+ 
+  </section>
+    
+  </body>
+</html>
