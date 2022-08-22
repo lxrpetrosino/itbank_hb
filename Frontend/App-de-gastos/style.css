@@ -1,0 +1,236 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  background-image: radial-gradient(#dcdcdcf1 2px, transparent 2px), radial-gradient(#dcdcdcf1 2px, transparent 2px);
+  background-size: 85px 85px;
+  background-position: 0 0, 42.5px 42.5px;
+  background-color: #fdfdfd;
+}
+
+header {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: white;
+  border: transparent outset;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(-10deg,  rgb(48, 70, 151) 25%,rgb(142, 115, 178));
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.label {
+  position: absolute;
+  font-weight: 600;
+  left: 10px;
+  top: 11.5px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: rgb(48, 70, 151);
+}
+.text-input {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(48, 70, 151);
+  background: white;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s;
+  color: black;
+}
+
+.label::before {
+  content: "";
+  height: 5px;
+  position: absolute;
+  background: white;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+
+.text-input:focus {
+  border: 2px solid #632ab8;
+}
+
+.text-input:focus + .label,
+.filled {
+  top: -10px;
+  color: #632ab8;
+  font-size: 14px;
+}
+
+.text-input::placeholder {
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.text-input:focus::placeholder {
+  opacity: 1;
+}
+
+button {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: transparent;
+  background: linear-gradient(-10deg,  rgb(48, 70, 151) 25%,rgb(142, 115, 178));
+  cursor: pointer;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6)
+}
+
+button:active {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(-10deg,  rgb(48, 70, 151) 25%,rgb(142, 115, 178));
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.calc-boton {
+  width: 100%;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.resultados li {
+  margin: 0.5rem auto;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: inset -3px -3px 3px rgba(142, 115, 178, 0.829), inset 3px 3px 3px rgba(48, 70, 151, 0.68);
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.list {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 12rem;
+  border-radius: 0.4rem;
+  box-shadow: inset -3px -3px 3px rgba(142, 115, 178, 0.829), inset 3px 3px 3px rgba(48, 70, 151, 0.68);
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.nombre-monto, .descripcion, .icons-container {
+  width: 100%;
+}
+
+.nombre-monto {
+  margin: auto auto;
+  text-align: center;
+}
+
+.nombre-monto:first-child {
+  text-transform: capitalize;
+}
+
+.descripcion p {
+  margin-left: 7rem;
+  text-transform: capitalize;
+}
+
+.icons-container {
+  position: relative;
+}
+
+.remove {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.remove:hover {
+  color: #304697;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+@media screen and (max-width: 600px) {
+  form, section {
+    width: 80%;
+  }
+
+  .items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 0.4rem;
+    box-shadow: inset -3px -3px 3px rgba(142, 115, 178, 0.829), inset 3px 3px 3px rgba(48, 70, 151, 0.68);
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .descripcion p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
