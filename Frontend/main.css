@@ -1,0 +1,192 @@
+/*--variables--*/
+:root {
+  /*color header*/
+  --clr-header: lightblue;
+  /* color background */
+  --clr-bg: rgb(234, 236, 235);
+  /*color side-bar*/
+  --clr-small-box: #53555a;
+  --clr-small-box-hover: #646669;
+  --clr-border-gray: #d2d2d2;
+  /*color cards*/
+  --purple-color: #6f42c1;
+  --gradient-color: linear-gradient(-10deg, rgb(111, 132, 153) 25%, rgb(44, 45, 46));
+}
+
+/*--box sizing--*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*--body--*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "roboto";
+  background-color: var(--clr-bg)
+  /*height: 100vh;*/
+  /*overflow: auto;*/
+}
+
+.main-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  /* background-color: ; */
+}
+
+
+/*--cotizaciones--*/
+
+.cotizaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 85%;
+}
+
+.head-cotizaciones {
+  background: var(--gradient-color);
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.dolar-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  box-shadow: 0 0 7px 1px grey;
+  border-top: 2px solid #f88282;
+  background-color: white;
+}
+
+.dolar-nombre {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.dolar-compra span, .dolar-venta span {
+  font-size: 2.2rem;
+}
+
+
+/*----------------*/
+/*--desktop view--*/
+/*----------------*/
+
+@media screen and (min-width: 60rem) {
+ 
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    margin: 0;
+  }
+
+  /*--cotizaciones--*/
+
+  .cotizaciones {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-areas:
+      "cotizaciones cotizaciones"
+      "D-Oficial    D-Blue      "
+      "D-Oficial    D-Liqui     "
+      "D-Oficial    D-Bolsa     "
+      "D-Oficial    D-Turista   ";
+    gap: 1rem;
+    width: 100%;
+    /*align-items: center;*/
+    justify-items: center;
+  }
+
+  /*--cotizaciones areas--*/
+
+  .head-cotizaciones {
+    grid-area: cotizaciones;
+    margin: 0 0 2rem 0;
+  }
+
+  .div-0 {
+    grid-area: D-Oficial;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border-top: 2px solid rgb(151, 23, 30);
+    box-shadow: 0px 0px 7px 1px grey;
+    width: 100%;
+  }
+
+  .div-0 .dolar-nombre {
+    grid-column: 1 / -1;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    align-self: center;
+  }
+
+  .div-0 .dolar-compra,
+  .div-0 .dolar-venta {
+    text-align: center;
+  }
+
+  .div-0 .dolar-compra span,
+  .div-0 .dolar-venta span {
+    font-size: 3rem;
+  }
+
+  .div-1 {
+    grid-area: D-Blue;
+  }
+  .div-2 {
+    grid-area: D-Liqui;
+  }
+  .div-3 {
+    grid-area: D-Bolsa;
+  }
+  .div-4 {
+    grid-area: D-Turista;
+  }
+
+  .cotizaciones .dolar-div:nth-child(n+3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: start;
+    width: 100%;
+
+    border-top: 2px solid rgb(151, 23, 30);
+    box-shadow: 0px 0px 7px 1px grey;
+  }
+
+  .cotizaciones .dolar-div:nth-child(n+3) .dolar-compra span, .dolar-venta span {
+    font-size: 2.3rem;
+  }
+
+  .cotizaciones .dolar-div:nth-child(n+3) .dolar-nombre {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: auto auto auto 2rem;
+    position: relative;
+    inset: 0;
+  }
+}
