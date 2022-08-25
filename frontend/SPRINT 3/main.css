@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   font-size: 1.6rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "roboto";
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--clr-bg)
   /*height: 100vh;*/
   /*overflow: auto;*/
@@ -71,7 +71,7 @@ body {
   gap: 1rem;
   width: 100%;
   box-shadow: 0 0 7px 1px grey;
-  border-top: 2px solid #f88282;
+  border-top: 2px solid #e46565;
   background-color: white;
 }
 
@@ -94,9 +94,6 @@ body {
  
 
   .main-grid {
-    display: grid;
-    grid-template-columns: 20rem 1fr;
-    gap: 2rem;
     padding: 2rem;
     align-items: center;
     margin: 0;
@@ -109,10 +106,9 @@ body {
     display: grid;
     grid-template-areas:
       "cotizaciones cotizaciones"
-      "D-Oficial    D-Blue      "
-      "D-Oficial    D-Liqui     "
-      "D-Oficial    D-Bolsa     "
-      "D-Oficial    D-Turista   ";
+      "D-Oficial    D-Oficial     "
+      "D-Blue    D-Liqui     "
+      "D-Turista   D-Bolsa      ";
     gap: 1rem;
     width: 100%;
     /*align-items: center;*/
@@ -130,6 +126,7 @@ body {
     grid-area: D-Oficial;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 1rem;
     border-top: 2px solid rgb(151, 23, 30);
     box-shadow: 0px 0px 7px 1px grey;
@@ -147,6 +144,14 @@ body {
   .div-0 .dolar-compra,
   .div-0 .dolar-venta {
     text-align: center;
+  }
+
+  div .variacion{
+    text-align: center;
+    justify-content: center;
+    font-size: 1,5rem;
+    background-color: rgba(44, 45, 46);
+    color: white;
   }
 
   .div-0 .dolar-compra span,
@@ -170,15 +175,12 @@ body {
   .cotizaciones .dolar-div:nth-child(n+3) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    justify-items: start;
-    width: 100%;
-
+    grid-template-rows: 1fr;
     border-top: 2px solid rgb(151, 23, 30);
     box-shadow: 0px 0px 7px 1px grey;
   }
 
-  .cotizaciones .dolar-div:nth-child(n+3) .dolar-compra span, .dolar-venta span {
+  .cotizaciones .dolar-div:nth-child(n+3) .dolar-compra span, .dolar-venta span{
     font-size: 2.3rem;
   }
 
@@ -186,7 +188,14 @@ body {
     font-size: 1.9rem;
     font-weight: 800;
     margin: auto auto auto 2rem;
-    position: relative;
-    inset: 0;
   }
+
+  .cotizaciones .dolar-div:nth-child(n+3) .variacion{
+    grid-column: 1/4;
+  }
+
+  .div-0 .variacion{
+    grid-column: 1/3;
+  }
+
 }

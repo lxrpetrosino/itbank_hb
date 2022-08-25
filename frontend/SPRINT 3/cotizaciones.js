@@ -14,7 +14,8 @@ fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
         const usd = {
             nombre: element.casa.nombre === 'Dolar Contado con Liqui' ? 'Dolar CCL' : (element.casa.nombre === 'Dolar turista' ? "Dolar Turista" : element.casa.nombre),
             compra: Number.parseFloat(element.casa.compra.replace(',', '.')),
-            venta: Number.parseFloat(element.casa.venta.replace(',', '.'))
+            venta: Number.parseFloat(element.casa.venta.replace(',', '.')),
+            variacion: Number.parseFloat(element.casa.variacion.replace(',', '.'))
         };
 
         const noCompra = isNaN(usd.compra) ? '' : `Compra <span>$${usd.compra}</span>`;
@@ -24,12 +25,12 @@ fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
                         <p class="dolar-nombre">${usd.nombre}</p>
                         <p class="dolar-compra">${noCompra}</p>
                         <p class="dolar-venta">Venta <span>$${usd.venta}</span></p>
+                        <div class="variacion">
+                            <p class="variacion">Variación <span>${usd.variacion}%</span></p>
+                        </div>
                     </div>`
         }
 
         cardCotizaciones.innerHTML += Items(usd);
-
-        //console.log(Number.parseFloat(usd.compra.replace(',', '.')))
-        //console.log(Number.parseFloat(usd.venta.replace(',', '.')))
     }
 }))
